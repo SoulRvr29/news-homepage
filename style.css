@@ -47,9 +47,6 @@ header {
   align-items: center;
   margin: 3rem 0;
 }
-nav {
-  position: relative;
-}
 .menuIcon:hover,
 .menuIconClose:hover {
   cursor: pointer;
@@ -296,12 +293,14 @@ footer a:hover {
 .display {
   display: block;
 }
-.ulAnim {
-  display: block;
-  width: 10px;
-  animation-name: ulBackground;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+@media screen and (max-width: 560px) {
+  .ulAnim {
+    display: block;
+    width: 10px;
+    animation-name: ulBackground;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 }
 .bcgOverlayAnim {
   display: block;
